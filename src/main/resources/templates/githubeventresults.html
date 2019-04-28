@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+    <title>Git Hub Events Results</title>
+</head>
+<body>
+<h1 >GIT Hub REPO Events Information </h1>
+<div th:if="${!eventsList.empty}">
+    <div style="font-size:15pt;font-family:Sans-serif" th:text="${eventtype +' Matching Details '}"></div>
+    <ol>
+        <li style="font-size:10pt;font-family:Sans-serif" th:each=" event : ${eventsList}" th:text="${event}"></li>
+    </ol>
+</div>
+<div th:if="${eventsList.empty}">
+    <span style="font-weight:bold;font-size:12pt;font-family:Sans-serif">There are no Matching events found in the given repository for that Owner</span>
+    <br><br>
+</div>
+<a href="/welcome" style="color:blue;font-size:12pt;font-family:Sans-serif"> submit another request </a>
+</body>
+</html>

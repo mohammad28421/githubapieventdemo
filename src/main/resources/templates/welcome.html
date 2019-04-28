@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <title>Getting Started: Git Hub Event Information</title>
+</head>
+<body>
+    <h1>Git Hub Repo Event Details Form</h1>
+    <form action="#" th:action="@{/getevents}" th:object="${request}" method="post">
+
+        <p style="font-family:Sans-serif">Owner Name : <input type="text" th:field="*{owner}"></p>
+        <p style="font-family:Sans-serif">Repository Name : <input type="text" th:field="*{repo}"></p>
+        <p style="font-family:Sans-serif">Event Type : <input type="text" th:field="*{eventType}"></p>
+        <p>
+            <input style="font-family:Sans-serif;font-size:20pt" type="submit" value=" Get Details "/>
+            <input style="font-family:Sans-serif;font-size:20pt" type="reset" value=" Reset ">
+        </p>
+    </form>
+</body>
+</html>
