@@ -19,11 +19,8 @@ import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.DefaultUriBuilderFactory;
 import org.springframework.web.util.UriTemplateHandler;
-
-import java.awt.*;
 import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
+
 
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.*;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withStatus;
@@ -119,7 +116,7 @@ public class RestClientTest {
     }
 
     /**
-     * Unit Test verifies the UnSuccess NOT FOUND API response     *
+     * Unit Test verifies the UnSuccess NOT FOUND API response
      */
     @Test
     public void getRepoEventDetailsError_404(){
