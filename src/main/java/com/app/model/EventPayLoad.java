@@ -4,6 +4,38 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.Date;
 
+/**
+ * SAMPLE EVENT PAYLOAD
+ * {
+ *         "id": "9515419470",
+ *         "type": "CreateEvent",
+ *         "actor": {
+ *             "id": 34410866,
+ *             "login": "mohammad28421",
+ *             "display_login": "mohammad28421",
+ *             "gravatar_id": "",
+ *             "url": "https://api.github.com/users/mohammad28421",
+ *             "avatar_url": "https://avatars.githubusercontent.com/u/34410866?"
+ *         },
+ *         "repo": {
+ *             "id": 183562187,
+ *             "name": "mohammad28421/githubapieventdemo",
+ *             "url": "https://api.github.com/repos/mohammad28421/githubapieventdemo"
+ *         },
+ *         "payload": {
+ *             "ref": "api_demo_work",
+ *             "ref_type": "branch",
+ *             "master_branch": "master",
+ *             "description": null,
+ *             "pusher_type": "user"
+ *         },
+ *         "public": true,
+ *         "created_at": "2019-04-26T05:31:15Z"
+ *     }
+ *     Only selected payloads values are mapped
+ *     i.e. Event type , careated date , Actor details
+ *     Remaining are ignored
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class EventPayLoad {
 

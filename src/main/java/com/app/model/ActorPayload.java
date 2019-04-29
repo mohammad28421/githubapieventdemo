@@ -12,6 +12,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  *             "url": "https://api.github.com/users/mohammad28421",
  *             "avatar_url": "https://avatars.githubusercontent.com/u/34410866?"
  *         }
+ *     payloads values are mapped
+ *     i.e. ID , login , display_login , gravatar_id , avatar_url
  *
  */
 @JsonIgnoreProperties(ignoreUnknown = true)

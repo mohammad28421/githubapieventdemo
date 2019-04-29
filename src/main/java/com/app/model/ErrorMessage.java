@@ -34,6 +34,6 @@ public class ErrorMessage {
 
     @Override
     public String toString(){
-        return "HTTP Code : "+statuscode+ "  Message : "+message ;
+        return message ;
     }
 }
